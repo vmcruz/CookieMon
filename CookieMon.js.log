@@ -1,0 +1,414 @@
+03:19:48.528 | OrionDocs Inf: <Full debug> mode enabled
+03:19:48.528 | OrionDocs Inf: 'Fancy:es' template selected
+03:19:48.559 | OrionDocs Inf: 'Fancy' template loaded
+03:19:48.559 | OrionDocs Inf: 'config' section loaded
+03:19:48.559 | OrionDocs Inf: Directories: img, css, fa, js, prism will be copied at the end
+03:19:48.559 | OrionDocs Inf: First line will be treated as @description
+03:19:48.559 | OrionDocs Inf: The project files will have '.html' extension
+03:19:48.559 | OrionDocs Inf: 'goto' special tag loaded from goto.ott
+03:19:48.559 | OrionDocs Inf: Valid block types are: class, method, singleton, function
+03:19:48.559 | OrionDocs Inf: Default project title is: '{toupper({FILENAME})} | Documentation'
+03:19:48.559 | OrionDocs Inf: File 'C:\Users\Víctor\Documents\GithubRepos\CookieMon\CookieMon.js' loaded
+03:19:48.574 | OrionDocs Inf: 11 comment blocks were found
+03:19:48.574 | OrionDocs Inf: Working on comment block #1
+03:19:48.574 | OrionDocs Inf: 5 tags were found
+03:19:48.574 | OrionDocs Inf: Comment Block #1 is:
+03:19:48.590 | Type: @singleton
+Tags: {
+	@singleton
+	Groups: {
+		0 = CookieMon.__singleton
+		1 = __singleton
+		2 = __singleton
+	}
+	@description
+	Groups: {
+		0 = Manejador de cookies en JavaScript.
+		1 = Manejador de cookies en JavaScript.
+	}
+	@author
+	Groups: {
+		0 = Víctor Cruz
+		1 = Víctor Cruz
+	}
+	@created
+	Groups: {
+		0 = 28/12/2016
+		1 = 28/12/2016
+	}
+	@version
+	Groups: {
+		0 = 0.3
+		1 = 0.3
+	}
+}
+
+03:19:48.606 | OrionDocs Inf: Working on comment block #2
+03:19:48.606 | OrionDocs Inf: 3 tags were found
+03:19:48.606 | OrionDocs Inf: Comment Block #2 is:
+03:19:48.606 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.version
+		1 = version
+		2 = version
+	}
+	@description
+	Groups: {
+		0 = Devuelve la versión de CookieMon.
+		1 = Devuelve la versión de CookieMon.
+	}
+	@returns
+	Groups: {
+		0 = {Float} La versión de CookieMon
+		1 = Float
+		2 = Float
+		3 = La versión de CookieMon
+	}
+}
+
+03:19:48.606 | OrionDocs Inf: Working on comment block #3
+03:19:48.606 | OrionDocs Inf: 3 tags were found
+03:19:48.606 | OrionDocs Inf: Comment Block #3 is:
+03:19:48.606 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.author
+		1 = author
+		2 = author
+	}
+	@description
+	Groups: {
+		0 = Devuelve el autor de CookieMon.
+		1 = Devuelve el autor de CookieMon.
+	}
+	@returns
+	Groups: {
+		0 = {String} El autor de CookieMon
+		1 = String
+		2 = String
+		3 = El autor de CookieMon
+	}
+}
+
+03:19:48.606 | OrionDocs Inf: Working on comment block #4
+03:19:48.606 | OrionDocs Inf: 3 tags were found
+03:19:48.606 | OrionDocs Inf: Comment Block #4 is:
+03:19:48.606 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.build
+		1 = build
+		2 = build
+	}
+	@description
+	Groups: {
+		0 = Devuelve la fecha de construcción de esta versión de CookieMon.
+		1 = Devuelve la fecha de construcción de esta versión de CookieMon.
+	}
+	@returns
+	Groups: {
+		0 = {String} La fecha en la que se creó esta versión de CookieMon
+		1 = String
+		2 = String
+		3 = La fecha en la que se creó esta versión de CookieMon
+	}
+}
+
+03:19:48.606 | OrionDocs Inf: Working on comment block #5
+03:19:48.621 | OrionDocs Inf: 4 tags were found
+03:19:48.621 | OrionDocs Inf: Comment Block #5 is:
+03:19:48.621 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.path
+		1 = path
+		2 = path
+	}
+	@description
+	Groups: {
+		0 = Devuelve o asigna el ámbito en el que las cookies serán creadas o eliminadas. Corresponde al valor opcional "path" de una cookie.
+		1 = Devuelve o asigna el ámbito en el que las cookies serán creadas o eliminadas. Corresponde al valor opcional "path" de una cookie.
+	}
+	@param
+	Groups: {
+		0 = {String} p - Establece el valor de "path" de la cookie.
+		1 = String
+		2 = String
+		3 = p
+		4 = Establece el valor de "path" de la cookie.
+	}
+	@returns
+	Groups: {
+		0 = {String} En caso de que se omita el parámetro, devuelve el valor actual de "path"
+		1 = String
+		2 = String
+		3 = En caso de que se omita el parámetro, devuelve el valor actual de "path"
+	}
+}
+
+03:19:48.621 | OrionDocs Inf: Working on comment block #6
+03:19:48.621 | OrionDocs Inf: 4 tags were found
+03:19:48.621 | OrionDocs Inf: Comment Block #6 is:
+03:19:48.621 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.domain
+		1 = domain
+		2 = domain
+	}
+	@description
+	Groups: {
+		0 = Devuelve o asigna el dominio en el que las cookies serán creadas o eliminadas. Corresponde al valor opcional "domain" de una cookie.
+		1 = Devuelve o asigna el dominio en el que las cookies serán creadas o eliminadas. Corresponde al valor opcional "domain" de una cookie.
+	}
+	@param
+	Groups: {
+		0 = {String} d - Establece el valor de "domain" de la cookie.
+		1 = String
+		2 = String
+		3 = d
+		4 = Establece el valor de "domain" de la cookie.
+	}
+	@returns
+	Groups: {
+		0 = {String} En caso de que se omita el parámetro, devuelve el valor actual de "domain"
+		1 = String
+		2 = String
+		3 = En caso de que se omita el parámetro, devuelve el valor actual de "domain"
+	}
+}
+
+03:19:48.621 | OrionDocs Inf: Working on comment block #7
+03:19:48.621 | OrionDocs Inf: 4 tags were found
+03:19:48.621 | OrionDocs Inf: Comment Block #7 is:
+03:19:48.621 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.secure
+		1 = secure
+		2 = secure
+	}
+	@description
+	Groups: {
+		0 = Devuelve o asigna si las cookies serán seguras o no. Corresponde al valor opcional "secure" de una cookie.
+		1 = Devuelve o asigna si las cookies serán seguras o no. Corresponde al valor opcional "secure" de una cookie.
+	}
+	@param
+	Groups: {
+		0 = {String} s - Establece el valor de "secure" de la cookie.
+		1 = String
+		2 = String
+		3 = s
+		4 = Establece el valor de "secure" de la cookie.
+	}
+	@returns
+	Groups: {
+		0 = {String} En caso de que se omita el parámetro, devuelve el valor actual de "secure"
+		1 = String
+		2 = String
+		3 = En caso de que se omita el parámetro, devuelve el valor actual de "secure"
+	}
+}
+
+03:19:48.621 | OrionDocs Inf: Working on comment block #8
+03:19:48.621 | OrionDocs Inf: 8 tags were found
+03:19:48.621 | OrionDocs Inf: Comment Block #8 is:
+03:19:48.621 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.set
+		1 = set
+		2 = set
+	}
+	@description
+	Groups: {
+		0 = Crea una cookie.
+		1 = Crea una cookie.
+	}
+	@param
+	Groups: {
+		0 = {String} flavor - Nombre de la cookie
+		1 = String
+		2 = String
+		3 = flavor
+		4 = Nombre de la cookie
+	}
+	@param
+	Groups: {
+		0 = {String} taste - Valor de la cookie
+		1 = String
+		2 = String
+		3 = taste
+		4 = Valor de la cookie
+	}
+	@param
+	Groups: {
+		0 = {Number} expires - ( OPCIONAL ) Valor entero positivo que determina la cantidad en segundos en que la cookie caducará
+		1 = Number
+		2 = Number
+		3 = expires
+		4 = ( OPCIONAL ) Valor entero positivo que determina la cantidad en segundos en que la cookie caducará
+	}
+	@param
+	Groups: {
+		0 = {Object} attrs - ( OPCIONAL ) Especifica el valor path, domain y secure de la cookie { path: '', domain: '', secure: '' }. Si no se han definido se usan por defecto.
+		1 = Object
+		2 = Object
+		3 = attrs
+		4 = ( OPCIONAL ) Especifica el valor path, domain y secure de la cookie { path: '', domain: '', secure: '' }. Si no se han definido se usan por defecto.
+	}
+	@returns
+	Groups: {
+		0 = {Boolean} True - Al crear la cookie
+		1 = Boolean
+		2 = Boolean
+		3 = True - Al crear la cookie
+	}
+	@returns
+	Groups: {
+		0 = {Boolean} Falso - Si flavor se omite o taste no está definido
+		1 = Boolean
+		2 = Boolean
+		3 = Falso - Si flavor se omite o taste no está definido
+	}
+}
+
+03:19:48.621 | OrionDocs Inf: Working on comment block #9
+03:19:48.621 | OrionDocs Inf: 4 tags were found
+03:19:48.621 | OrionDocs Inf: Comment Block #9 is:
+03:19:48.621 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.get
+		1 = get
+		2 = get
+	}
+	@description
+	Groups: {
+		0 = Lee una cookie.
+		1 = Lee una cookie.
+	}
+	@param
+	Groups: {
+		0 = {String} flavor - Nombre de la cookie
+		1 = String
+		2 = String
+		3 = flavor
+		4 = Nombre de la cookie
+	}
+	@returns
+	Groups: {
+		0 = {Object} Cookie
+		1 = Object
+		2 = Object
+		3 = Cookie
+	}
+}
+
+03:19:48.621 | OrionDocs Inf: Working on comment block #10
+03:19:48.621 | OrionDocs Inf: 3 tags were found
+03:19:48.637 | OrionDocs Inf: Comment Block #10 is:
+03:19:48.637 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.jar
+		1 = jar
+		2 = jar
+	}
+	@description
+	Groups: {
+		0 = Devuelve todas las cookies creadas hasta el momento en que la función se ejecuta
+		1 = Devuelve todas las cookies creadas hasta el momento en que la función se ejecuta
+	}
+	@returns
+	Groups: {
+		0 = {Object} Devuelve el objeto de las cookies creadas. Además añade la cantidad de cookies (length) y los nombres de cada una de ellas (flavors).
+		1 = Object
+		2 = Object
+		3 = Devuelve el objeto de las cookies creadas. Además añade la cantidad de cookies (length) y los nombres de cada una de ellas (flavors).
+	}
+}
+
+03:19:48.637 | OrionDocs Inf: Working on comment block #11
+03:19:48.637 | OrionDocs Inf: 5 tags were found
+03:19:48.637 | OrionDocs Inf: Comment Block #11 is:
+03:19:48.637 | Type: @function
+Tags: {
+	@function
+	Groups: {
+		0 = CookieMon.remove
+		1 = remove
+		2 = remove
+	}
+	@description
+	Groups: {
+		0 = Elimina una cookie creada previamente si existe
+		1 = Elimina una cookie creada previamente si existe
+	}
+	@param
+	Groups: {
+		0 = {String} flavor - El nombre de la cookie que se ha de eliminar
+		1 = String
+		2 = String
+		3 = flavor
+		4 = El nombre de la cookie que se ha de eliminar
+	}
+	@returns
+	Groups: {
+		0 = {Boolean} True - Cuando la cookie se elimina
+		1 = Boolean
+		2 = Boolean
+		3 = True - Cuando la cookie se elimina
+	}
+	@returns
+	Groups: {
+		0 = {Boolean} Falso - Si la cookie no existe
+		1 = Boolean
+		2 = Boolean
+		3 = Falso - Si la cookie no existe
+	}
+}
+
+03:19:48.637 | OrionDocs Inf: Distribution directory 'dist' has been created.
+03:19:48.637 | OrionDocs Inf: Project directory 'dist/CookieMon' has been created.
+03:19:48.637 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon___singleton.html' has been created.
+03:19:48.637 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.637 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_version.html' has been created.
+03:19:48.653 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.653 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_author.html' has been created.
+03:19:48.653 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.653 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_build.html' has been created.
+03:19:48.653 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.653 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_path.html' has been created.
+03:19:48.668 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.668 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_domain.html' has been created.
+03:19:48.668 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.668 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_secure.html' has been created.
+03:19:48.684 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.684 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_set.html' has been created.
+03:19:48.684 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.684 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_get.html' has been created.
+03:19:48.699 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.699 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_jar.html' has been created.
+03:19:48.765 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.766 | OrionDocs Inf: StreamWriter for file 'dist/CookieMon/CookieMon_remove.html' has been created.
+03:19:48.771 | OrionDocs Inf: StreamWriter has finished without errors.
+03:19:48.772 | OrionDocs Inf: Creating index file 'dist/CookieMon/index.html'.
+03:19:48.772 | OrionDocs Inf: Replacing '{PAGE(0)}' to 'CookieMon___singleton.html'.
+03:19:48.862 | OrionDocs Inf: Dir copied from: 'C:\Program Files (x86)\OrionDocs\templates\Fancy\img' to 'dist/CookieMon/img'.
+03:19:48.878 | OrionDocs Inf: Dir copied from: 'C:\Program Files (x86)\OrionDocs\templates\Fancy\css' to 'dist/CookieMon/css'.
+03:19:48.925 | OrionDocs Inf: Dir copied from: 'C:\Program Files (x86)\OrionDocs\templates\Fancy\fa' to 'dist/CookieMon/fa'.
+03:19:48.925 | OrionDocs Inf: Dir copied from: 'C:\Program Files (x86)\OrionDocs\templates\Fancy\js' to 'dist/CookieMon/js'.
+03:19:48.940 | OrionDocs Inf: Dir copied from: 'C:\Program Files (x86)\OrionDocs\templates\Fancy\prism' to 'dist/CookieMon/prism'.
+03:19:48.940 | OrionDocs Inf: Creating clean file for 'dist/CookieMon.js'.
+03:19:48.940 | OrionDocs Inf: Done.
