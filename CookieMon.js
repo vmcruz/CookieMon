@@ -45,7 +45,7 @@ var CookieMon = cookiemon = (function(document) {
 		
 		/**
 			Devuelve o asigna el ámbito en el que las cookies serán creadas o eliminadas. Corresponde al valor opcional "path" de una cookie.
-			@function CookieMon.kitchen
+			@function CookieMon.path
 			@param {String} p - Establece el valor de "path" de la cookie.
 			@returns {String} En caso de que se omita el parámetro, devuelve el valor actual de "path"
 		*/
@@ -56,6 +56,12 @@ var CookieMon = cookiemon = (function(document) {
 				return _path;
 		},
 		
+		/**
+			Devuelve o asigna el dominio en el que las cookies serán creadas o eliminadas. Corresponde al valor opcional "domain" de una cookie.
+			@function CookieMon.domain
+			@param {String} d - Establece el valor de "domain" de la cookie.
+			@returns {String} En caso de que se omita el parámetro, devuelve el valor actual de "domain"
+		*/
 		domain : function(d) {
 			if(d)
 				_domain = d;
@@ -63,6 +69,12 @@ var CookieMon = cookiemon = (function(document) {
 				return _domain;
 		},
 		
+		/**
+			Devuelve o asigna si las cookies serán seguras o no. Corresponde al valor opcional "secure" de una cookie.
+			@function CookieMon.secure
+			@param {String} s - Establece el valor de "secure" de la cookie.
+			@returns {String} En caso de que se omita el parámetro, devuelve el valor actual de "secure"
+		*/
 		secure : function(s) {
 			if(typeof s == 'boolean')
 				_secure = s;
@@ -71,18 +83,18 @@ var CookieMon = cookiemon = (function(document) {
 		},
 		
 		/**
-			Crea, modifica o lee una cookie.
-			@function CookieMon.cookie
-			@param {String} f - Nombre de la cookie
-			@param {String} v - Valor de la cookie
-			@param {Number} s - ( OPCIONAL ) Valor entero positivo que determina la cantidad en segundos en que la cookie caducará
-			@returns {String} Devuelve 'in the jar' al crear una nueva cookie. Cuando al menos los parámetros f y v existen
-			@returns {Boolean} Falso - Si f ó v se omiten
+			Crea una cookie.
+			@function CookieMon.set
+			@param {String} flavor - Nombre de la cookie
+			@param {String} taste - Valor de la cookie
+			@param {Number} expires - ( OPCIONAL ) Valor entero positivo que determina la cantidad en segundos en que la cookie caducará
+			@param {Object} attrs - ( OPCIONAL ) Especifica el valor path, domain y secure de la cookie { path: '', domain: '', secure: '' }. Si no se han definido se usan por defecto.
+			@returns {Boolean} True - Al crear la cookie
+			@returns {Boolean} Falso - Si flavor se omite o taste no está definido
 		*/
 		set : function(flavor, taste, expires, attrs) {
 			if(flavor) {
 				if(typeof taste != 'undefined') {
-					//La crea
 					expires = expires || 'Infinita';
 					attrs = attrs || {};
 			
@@ -112,6 +124,12 @@ var CookieMon = cookiemon = (function(document) {
 			return false
 		},
 		
+		/**
+			Lee una cookie.
+			@function CookieMon.get
+			@param {String} flavor - Nombre de la cookie
+			@returns {Object} Cookie
+		*/
 		get : function(flavor) {
 			if(flavor) {
 				var cookies = document.cookie.split(";");
@@ -141,7 +159,6 @@ var CookieMon = cookiemon = (function(document) {
 			@function CookieMon.jar
 			@returns {Object} Devuelve el objeto de las cookies creadas. Además añade la cantidad de cookies (length) y los nombres de cada una de ellas (flavors).
 		*/
-		
 		jar : function() {
 			var jar = {
 				length: 0,
@@ -176,16 +193,15 @@ var CookieMon = cookiemon = (function(document) {
 		
 		/**
 			Elimina una cookie creada previamente si existe
-			@function CookieMon.eat
-			@param {String} f - El nombre de la cookie que se ha de eliminar
-			@returns {String} Devuelve 'yumi yumi' cuando la cookie se elimina
+			@function CookieMon.remove
+			@param {String} flavor - El nombre de la cookie que se ha de eliminar
+			@returns {Boolean} True - Cuando la cookie se elimina
 			@returns {Boolean} Falso - Si la cookie no existe
 		*/
-		
-		remove : function(f) {
-			var cookie = this.get(f);
+		remove : function(flavor) {
+			var cookie = this.get(flavor);
 			if(cookie) {
-				this.set(f, "", -1, {path: cookie.path, domain: cookie.domain, secure: cookie.secure})
+				this.set(flavor, "", -1, {path: cookie.path, domain: cookie.domain, secure: cookie.secure})
 				return true;
 			}
 			return false;
