@@ -1,0 +1,1 @@
+Singleton manejador de cookies mejoradas.
